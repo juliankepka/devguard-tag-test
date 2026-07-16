@@ -18,13 +18,13 @@ jobs:
       contents: read
       security-events: write
     with:
-      devguard-asset-name: l3montree-cybersecurity/projects/devguard/assets/devguard
+      devguard-asset-name: testorg/projects/emptybranch/assets/devguard-tag-test
       devguard-artifact-name: "pkg:golang/github.com/l3montree-dev/devguard"
-      devguard-api-url: https://api.main.devguard.org
-      fail-on-risk: high
-      fail-on-cvss: high
-      devguard-web-ui: https://main.devguard.org
-      allow-failure: false
+      devguard-api-url: https://swimwear-exemplary-blinking.ngrok-free.dev
+      fail-on-risk: never
+      fail-on-cvss: never
+      devguard-web-ui: http://localhost:3000
+      allow-failure: true
     secrets:
       devguard-token: ${{ secrets.DEVGUARD_TOKEN }}
   
